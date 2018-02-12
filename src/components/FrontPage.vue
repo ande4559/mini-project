@@ -69,11 +69,30 @@
 
     </section>
 
-    <section class="fronPage--offerSection">
+    <section class="frontPage--offerSection">
       <img class="frontPage--offerSection__imgOne" src="" alt="">
       <img src="frontPage--offerSection__imgTwo" alt="">
       <img src="frontPage--offerSection__imgThree" alt="">
-      
+
+    </section>
+
+    <section class="frontPage--featured">
+      <div class="Product--box">
+
+        <figure>
+          <img class="product--image" src="" alt="">
+          <figcaption class="product--imageCaption"></figcaption>
+
+        </figure>
+      <p class="product--price"> 35$ </p>
+
+      <button class="product--addToBasket"> <p> add to bag </p> </button>
+
+
+
+
+      </div>
+
     </section>
 
 
