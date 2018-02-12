@@ -1,16 +1,84 @@
 <template>
 
-  <section class="frontPage--sectionOne">
-    <div class="frontPage--sectionOne__sliderbox">
-      <h1 class="frontPage--sectionOne__headline">Big Summer Sale</h1>
-      <a class="frontPage--sectionOne__callToAction" href="#"> Learn more about great deals</a>
-    </div>
-  </header>
+  <div class="root-element">
+    <section class="frontPage--Banner">
+      <div class="frontPage--Banner__sliderbox">
+        <h1 class="frontPage--Banner__headline">Big Summer Sale</h1>
+        <a class="frontPage--Banner__callToAction" href="#"> Learn more about great deals</a>
+      </div>
+      <div class="frontPage--Banner__sliderbox">
+        <h1 class="frontPage--Banner__headline">Big Summer Sale</h1>
+        <a class="frontPage--Banner__callToAction" href="#"> Learn more about great deals</a>
+      </div>
+      <div class="frontPage--Banner__sliderbox">
+        <h1 class="frontPage--Banner__headline">Big Summer Sale</h1>
+        <a class="frontPage--Banner__callToAction" href="#"> Learn more about great deals</a>
+      </div>
+      <div class="frontPage--Banner__sliderbox">
+        <h1 class="frontPage--Banner__headline">Big Summer Sale</h1>
+        <a class="frontPage--Bannere__callToAction" href="#"> Learn more about great deals</a>
+      </div>
 
-  <section>
 
-    <h1></h1>
-  </section>
+    </section>
+
+    <section class="frontPage--sectionTwo">
+      <div class="frontPage--sectionTwo__box1">
+
+        <a href="/" class="frontPage--sectionTwo__callToAction"> Mens Lookbook</a>
+
+      </div>
+
+      <article class="frontPage--subscribe">
+
+        <h2 class="frontPage--subscribe__headline"> Get our Newsletter</h2>
+        <p class="frontPage--subscribe__description"> Join our maillist to get special discounts </p>
+
+        <form class="frontPage--subscribe__form">
+            <input class="frontPage--subscribe__textField" type="text" placeholder="Enter your email" required>
+            <button class="frontPage--subscribe__button" type="submit">Subscribe</button>
+        </form>
+
+      </article>
+
+      <div class="frontPage--sectionTwo__box1">
+
+        <a href="/" class="frontPage--sectionTwo__callToAction"> Womens Lookbook</a>
+
+      </div>
+
+    </section>
+
+    <section class="frontPage--topBrands">
+
+      <h3 class="frontPage--topBrands__headline"> Top Brands </h3>
+
+
+      <div class="frontPage--topBrands__slider">
+
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+
+      </div>
+
+    </section>
+
+    <section class="fronPage--offerSection">
+      <img class="frontPage--offerSection__imgOne" src="" alt="">
+      <img src="frontPage--offerSection__imgTwo" alt="">
+      <img src="frontPage--offerSection__imgThree" alt="">
+      
+    </section>
+
+
+  </div>
+
 </template>
 
 <script>
