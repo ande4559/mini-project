@@ -1,12 +1,16 @@
 <template>
 
-  <header class="frontPage">
-    <div class="fronPage__sliderbox">
-      <h1 class="frontPage__headline">Big Summer Sale</h1>
-      <a class="frontPage__callToAction" href="#"> Learn more about great deals</a>
+  <section class="frontPage--sectionOne">
+    <div class="frontPage--sectionOne__sliderbox">
+      <h1 class="frontPage--sectionOne__headline">Big Summer Sale</h1>
+      <a class="frontPage--sectionOne__callToAction" href="#"> Learn more about great deals</a>
     </div>
-
   </header>
+
+  <section>
+
+    <h1></h1>
+  </section>
 </template>
 
 <script>
