@@ -9,6 +9,7 @@
       <router-link to="/product"> product </router-link>
     </nav>
     <router-view/>
+    <my-panel> </my-panel>
 
     <VueFooter> </VueFooter>
 

@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import FrontPage from '@/components/FrontPage'
 import ContactUs from '@/components/ContactUs'
 import Category from '@/components/Category'
-import Product from '@/components/Product'
+import ProductDetail from '@/components/ProductDetail'
 
 Vue.use(Router)
 
@@ -25,9 +25,9 @@ export default new Router({
       component: Category
     },
     {
-      path: '/product',
-      name: 'Product',
-      component: Product
+      path: '/product/:id',
+      name: 'ProductDetail',
+      component: ProductDetail
     }
   ]
 })

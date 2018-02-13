@@ -1,0 +1,34 @@
+[
+
+  {
+    "id": 1,
+    "title": "product 1",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 399.99
+
+  },
+  {
+    "id": 2,
+    "title": "product 2",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 299.99
+
+  },
+  {
+    "id": 3,
+    "title": "product 3",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 199.99
+
+  },
+  {
+    "id": 4,
+    "title": "product 4",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99
+  }
+
+
+
+
+]
