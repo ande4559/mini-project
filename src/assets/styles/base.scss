@@ -25,20 +25,18 @@ body{
 }
 
 
-//frontPage--Banner{
-///    display: flex;
-///    flex-direction: column;
-///    width: 1440px;
-///    @media (max-width: 1600px) {
-///      width: 1100px;
-///    }
-///    @media (max-width: 1280px) {
-///      width: 1024px;
-///    }
-///    @media (max-width: 780px) {
-///      width: 760px;
-///    }
+.root-element{
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-direction: column;
+}
 
+.frontPage--Banner{
+  width: 100%;
 
   .frontPage--Banner__sliderbox{
     background-image: url("/static/images/Header/HEADER.jpg");
@@ -69,17 +67,173 @@ body{
 
     }
 
-    .frontPage--sectionTwo{
-      width: 1070px;
+  }
+
+}
+
+
+
+
+  .frontPage--sectionTwo{
+    width: 1070px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    .frontPage--sectionTwo__box1{
+      background-image: url("/static/images/Homepage/MensLookbookImage.jpg");
+      width: 350px;
+      height: 390px;
       display: flex;
-      
+      justify-content: center;
+      align-items: center;
+
+
+
+
+
+      .frontPage--sectionTwo__callToAction{
+      color: white;
+      text-decoration: none;
+      font-size: 3rem;
+      width: 240px;
+      height: 150px;
+      text-align: center;
+      border: 2px solid;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+    }
+
+    .frontPage--sectionTwo__box2{
+      @extend .frontPage--sectionTwo__box1;
+      background-image: url("/static/images/Homepage/WomensLookBookImage.jpg");
 
     }
 
+    .frontPage--subscribe{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 13px;
+      width: 435px;
+      height: 390px;
+      transform: scale(1.0);
+      -webkit-box-shadow: 0px 10px 16px -4px rgba(0,0,0,0.31);
+      box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.15);
+      margin-top: -14px;
+
+
+      .frontPage--subscribe__form{
+        text-transform: uppercase;
+        width: 435px;
+        height: 390px;
+        background-color: $midtboxwhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $grey-border;
+
+
+        .subscribe__iconSpan{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px;
+          border-radius: 50%;
+          width: 65px;
+          height: 65px;
+          background-color: $turkish;
+          margin-bottom: 25px;
+
+          img{
+            width: 39px;
+            height: 31px;
+
+          }
+
+
+        }
+
+        .frontPage--subscribe__headline{
+          font-size: 1.875rem;
+          color: $black;
+          width: 320px;
+          text-align: center;
+
+        }
+
+        .frontPage--subscribe__description{
+          opacity: 0.6;
+          color: black;
+          font-size: 1.125rem;
+          width: 280px;
+          text-align: center;
+          margin-top: 15px;
+          margin-bottom: 40px;
 
 
 
+        }
+
+        .frontPage--subscribe__textField{
+          border: none;
+          border-bottom: 1px solid $black;
+          width: 370px;
+          background-color: $midtboxwhite;
+          text-align: center;
+          height: 30px;
+          font-size: 1.125rem;
+          font-weight: 500;
 
 
+          
+
+        }
+
+
+
+        .frontPage--subscribe__button{
+          border: 1px solid $black;
+          text-align: center;
+          padding: 14px 140px;
+          font-size: 1.125rem;
+          text-align: center;
+          margin-top: 12px;
+          background-color: $midtboxwhite;
+
+
+        }
+
+      }
+    }
+
+  }
+
+
+  .frontPage--topBrands{
+
+    width: 100%;
+    height: 270px;
+    background-color: $lightGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+      .frontPage--topBrands__slider{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 1070px;
+      }
 
   }

@@ -12,25 +12,25 @@
     <section class="frontPage--sectionTwo">
       <div class="frontPage--sectionTwo__box1">
 
-        <a href="/" class="frontPage--sectionTwo__callToAction"> Mens Lookbook</a>
+        <a href="/" class="frontPage--sectionTwo__callToAction"> <strong>MEN'S</strong> Lookbook</a>
 
       </div>
 
       <article class="frontPage--subscribe">
 
-        <h2 class="frontPage--subscribe__headline"> Get our Newsletter</h2>
-        <p class="frontPage--subscribe__description"> Join our maillist to get special discounts </p>
-
         <form class="frontPage--subscribe__form">
-            <input class="frontPage--subscribe__textField" type="text" placeholder="Enter your email" required>
-            <button class="frontPage--subscribe__button" type="submit">Subscribe</button>
+            <span class="subscribe__iconSpan"><img class="subscribe__mailIcon"src="static/images/Homepage/MailIcon.png" alt="MailIcon Classy"></span>
+            <h2 class="frontPage--subscribe__headline"> Get our Newsletter</h2>
+            <p class="frontPage--subscribe__description"> Join our maillist to get special discounts </p>
+            <input class="frontPage--subscribe__textField" type="text" placeholder="ENTER YOUR EMAIL" required>
+            <button class="frontPage--subscribe__button" type="submit">SUBSCRIBE</button>
         </form>
 
       </article>
 
-      <div class="frontPage--sectionTwo__box1">
+      <div class="frontPage--sectionTwo__box2">
 
-        <a href="/" class="frontPage--sectionTwo__callToAction"> Womens Lookbook</a>
+        <a href="/" class="frontPage--sectionTwo__callToAction"><strong> WOMEN'S</strong> Lookbook</a>
 
       </div>
 
@@ -43,14 +43,12 @@
 
       <div class="frontPage--topBrands__slider">
 
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
+      
 
       </div>
 
