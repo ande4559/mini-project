@@ -48,16 +48,30 @@
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
-      
+
 
       </div>
 
     </section>
 
     <section class="frontPage--offerSection">
-      <img class="frontPage--offerSection__imgOne" src="" alt="">
-      <img src="frontPage--offerSection__imgTwo" alt="">
-      <img src="frontPage--offerSection__imgThree" alt="">
+      <div class="frontPage--offerSection__wrapper">
+
+        <div class="frontPage--offerSection_sectionOne">
+        <img class="frontPage--offerSection__imgOne" src="/static/images/Homepage/MustHaveForHerFull.jpg" alt="">
+      </div>
+
+        <div class="frontPage--offerSection_sectionTwo">
+
+          <img class="frontPage--offerSection__imgTwo" src="/static/images/Homepage/75PercentOffFull.jpg" alt="">
+
+          <img class="frontPage--offerSection__imgThree" src="/static/images/Homepage/NewSummerStyleFull.jpg" alt="">
+
+        </div>
+
+      </div>
+
+
 
     </section>
 
