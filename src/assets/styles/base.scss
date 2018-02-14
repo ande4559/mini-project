@@ -1,38 +1,85 @@
-$color: tomato;
-$grey: grey;
+@import '_variables';
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+*{
+  margin: 0 ;
+}
 
 body{
-  background-color: $grey;
+  font-family: 'Open Sans', sans-serif;
+
 }
-p{
-  color: $color;
-}
-.main{
+
+#app{
+  width: 100%;
+  width: 100%;
+  height: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center;
+  background-color: $fullwhite;
 }
-nav{
-  width: 80%;
-  background-color: white;
-  border: 1px;
-  border-radius: 15px;
-  align-items: center;
+
+
+//frontPage--Banner{
+///    display: flex;
+///    flex-direction: column;
+///    width: 1440px;
+///    @media (max-width: 1600px) {
+///      width: 1100px;
+///    }
+///    @media (max-width: 1280px) {
+///      width: 1024px;
+///    }
+///    @media (max-width: 780px) {
+///      width: 760px;
+///    }
+
+
+  .frontPage--Banner__sliderbox{
+    background-image: url("/static/images/Header/HEADER.jpg");
+    height: 575px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12fr;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 
 
-  a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
+    .frontPage--Banner__callToAction{
+      width: 268px;
+      font-size: 16px;
+      height: 18px;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid;
+      margin-left: 867px;
+      margin-top: 385px;
+      text-transform: uppercase;
 
-    &.router-link-exact-active{
-      text-decoration: underline;
+    }
+
+    .frontPage--sectionTwo{
+      width: 1070px;
+      display: flex;
+      
+
     }
 
 
 
+
+
+
+
   }
-
-
-}

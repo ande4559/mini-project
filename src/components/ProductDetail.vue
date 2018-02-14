@@ -18,6 +18,11 @@ export default {
     let id = this.$route.params.id;
     this.getProductById(id);
   },
+  watch: {
+    '$route.params.id': function (id) {
+      this.getProductById(id)
+    }
+  },
   methods: {
     getProductById: function(id){
       axios
