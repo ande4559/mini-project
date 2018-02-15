@@ -39,6 +39,7 @@ body{
 .frontPage--Banner{
   width: 100%;
 
+
   .frontPage--Banner__sliderbox{
     background-image: url("/static/images/Header/HEADER.jpg");
     height: 575px;
@@ -597,7 +598,7 @@ body{
       font-size:  $white;
       font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 600;
-      font-style: italic;
+      xfont-style: italic;
     }
   }
 }
