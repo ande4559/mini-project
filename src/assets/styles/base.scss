@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_header';
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -85,7 +86,7 @@ body{
 
 
   .frontPage--sectionTwo{
-    width: 1070px;
+    width: 1170px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -182,7 +183,7 @@ body{
 
         .frontPage--subscribe__description{
           opacity: 0.6;
-          color: black;
+          color: $black;
           font-size: 1.125rem;
           width: 280px;
           text-align: center;
@@ -218,6 +219,12 @@ body{
           text-align: center;
           margin-top: 12px;
           background-color: $midtboxwhite;
+
+          &:hover{
+            transition: all 0.3s ease-in-out;
+            background-color: black;
+            color: $white;
+          }
 
 
         }
@@ -276,7 +283,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
 
-        width: 1070px;
+        width: 1170px;
       }
 
   }
@@ -291,38 +298,306 @@ body{
     padding-bottom: 90px;
 
     .frontPage--offerSection__wrapper{
-      width: 1070px;
+      width: 1170px;
       height: 600px;
+      display: grid;
+      grid-template-columns: 530fr 530fr;
+       grid-template-areas:
+       "big smallOne"
+        "big smallTwo";
+        grid-gap: 5px;
+        justify-content: center;
+        }
+
+    .frontPage--offerSection__imgOne{
+      grid-area: big;
+      width: 585px;
+      height: 600px;
+    }
+
+    .frontPage--offerSection__imgTwo{
+    grid-area: smallOne;
+    width: 585px;
+    height: 298px;
+
+
+    }
+
+    .frontPage--offerSection__imgThree{
+
+    grid-area: smallTwo;
+    width: 585px;
+    height: 297px;
+    }
+
+
+
+
+  }
+
+
+  .frontPage--featured{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .frontPage--featured__headlines{
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
+      flex-direction: flow;
+      a{
+        margin: 25px;
+        text-decoration: none;
 
-    .frontPage--offerSection_sectionOne{
-      width: 535px;
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-
-
-
+        h3{
+          font-size: 1.125rem;
+          color: $black;
+        }
+      }
     }
 
-    .frontPage--offerSection_sectionTwo{
 
-      width: 535px;
+  }
+
+.frontPage--featured{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  .frontPage--featured__wrapper{
+
+
+    width: 1170px;
+
+.columnDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: center;
+  .product--elementWrapper{
+    width: 270px;
+    .product--box{
+
+
+
+
+      .product-wrapper{
+        .product--image{
+          position: relative;
+          overflow: hidden;
+          width: 270px;
+          height: 400px;
+          .product--saleText{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 70px;
+            height: 35px;
+            background-color: $turkish;
+            .product--saleText__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 70px;
+            height: 35px;
+            font-size: 1rem;
+          }
+          }
+          .product--hoverPopUp{
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, .7);
+            width: 270px;
+            height: 100px;
+            bottom: -100px;
+            .iconWrapper{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $turkish;
+              border: 1px;
+              border-radius: 50%;
+              height: 50px;
+              width: 50px;
+              a{
+                img{
+                  display: block;
+                  margin-top: 4px;
+                }
+              }
+            }
+          }
+          &:hover{
+            .product--hoverPopUp{
+              bottom: 0px;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+
+
+    .product--description{
+      width: 230px;
+      text-align: center;
+      font-size: 0.875rem;
+      padding: 20px;
+      opacity: 0.6;
+      color: $black;
+    }
+
+    .product--info{
+      width: 270px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
 
-      img{
-        margin-top: 5px;
-        margin-left: 5px;
+    .product--info__price{
+      font-size: 1.25rem;
+      color: $black;
+
+    }
+    .product--info__addToBasket{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row;
+      color: $black;
+
+      background-color: $fullwhite;
+      border: 1px solid $black;
+      width: 140px;
+      height: 35px;
+
+      .whiteBag{
+        display: none;
+
+      }
+      .blackBag{
+        display: block;
+
+      }
+    }
+
+    &:hover{
+      .product--info__addToBasket{
+        background-color: $black;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        .whiteBag{
+          display: block;
+
+        }
+        .blackBag{
+          display: none;
+
+        }
       }
 
-
     }
+    }
+  }
+}
+
+  }
+
+}
 
 
+.frontPage--summerOffer{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  background-image: url("/static/images/Homepage/25OffBG.jpg");
+  height: 430px;
+
+  p{
+    font-size: 3.75rem;
+    color: $white;
+    font-weight: 300;
+  }
+
+  .frontPage--summerOffer__wrapper{
+    width: 1170px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .frontPage--summerOffer__circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(51, 208, 222, .7);
+      width: 315px;
+      height: 315px;
+      border: 1px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .frontPage--summerOffer__25percent{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: lighter;
+        font-size: 6.25rem;
+        strong{
+          font-size: 2.0625rem;
+          margin: -30px;
+
+        }
+      }
     }
 
   }
+
+}
+
+
+
+.frontPage--quotes{
+  width: 100%;
+  height: 435px;
+  background-color: $turkish;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .frontPage--quotes__box{
+    width: 770px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .frontPage--quotes__avatar{
+      border: 5px solid $turkishLight;
+      border-radius: 50%;
+    }
+    .frontPage--quotes__name{
+      color: $white;
+      font-size: 1.25rem;
+    }
+    .frontPage--quotes__text{
+      color: white;
+      font-size:  $white;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}

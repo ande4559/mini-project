@@ -1,14 +1,19 @@
 <template id="">
-  <div class="">
+  <header id="scroll" class="header">
 
-    <nav>
-      <router-link to="/"> home </router-link>
-      <router-link to="/contact"> contact </router-link>
-      <router-link to="/category"> category </router-link>
-      <router-link to="/product"> product </router-link>
+    <span class="header--logoWrapper">
+        <router-link to="/"> <img class="header--logoImage" src="/static/images/Header/CLASSY.png" alt=""> </router-link>
+    </span>
+
+    <nav  class="header--navigation">
+
+      <router-link  class="header--navigation__item" to="#"> <img src="/static/images/Header/Login symbol.png" alt=""> LOGIN </router-link>
+      <router-link  class="header--navigation__item" to="#"> <img src="/static/images/Header/Shopping bag symbol.png" alt=""> ITEMS </router-link>
+      <router-link class="header--navigation__item" to="#"> <img src="/static/images/Header/Mag glass symbol.png" alt="">  </router-link>
+      <router-link class="header--navigation__item" to="#"> <img src="/static/images/Header/Burger menu icon.png" alt="">  </router-link>
     </nav>
 
-  </div>
+  </header>
 
 </template>
 
@@ -20,6 +25,15 @@ export default {
       msg: 'HelloWorld'
     }
   }
+}
+
+window.onscroll = function() {
+    var nav = document.getElementById('scroll');
+    if ( window.pageYOffset > 500) {
+        nav.classList.add("active");
+    } else {
+        nav.classList.remove("active");
+    }
 }
 
 </script>

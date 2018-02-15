@@ -1,0 +1,47 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000000;
+
+  &.active {
+    background-color: $darkGrey;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+
+
+  }
+
+  .header--logoWrapper{
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+
+  .header--navigation{
+    margin-right: 100px;
+    margin-top: 40px;
+
+    .header--navigation__item{
+      color: $white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin: 10px;
+      img{
+        margin-right: 10px;
+
+      }
+      &:nth-child(4) {
+      margin-right: -7px;
+      }
+
+
+
+    }
+
+
+  }
+
+}

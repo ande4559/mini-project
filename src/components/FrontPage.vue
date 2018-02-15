@@ -57,17 +57,17 @@
     <section class="frontPage--offerSection">
       <div class="frontPage--offerSection__wrapper">
 
-        <div class="frontPage--offerSection_sectionOne">
-        <img class="frontPage--offerSection__imgOne" src="/static/images/Homepage/MustHaveForHerFull.jpg" alt="">
-      </div>
 
-        <div class="frontPage--offerSection_sectionTwo">
+        <img class="frontPage--offerSection__imgOne" src="/static/images/Homepage/MustHaveForHerFull.jpg" alt="">
+
+
+
 
           <img class="frontPage--offerSection__imgTwo" src="/static/images/Homepage/75PercentOffFull.jpg" alt="">
 
           <img class="frontPage--offerSection__imgThree" src="/static/images/Homepage/NewSummerStyleFull.jpg" alt="">
 
-        </div>
+
 
       </div>
 
@@ -76,31 +76,129 @@
     </section>
 
     <section class="frontPage--featured">
-      <div class="Product--box">
 
-        <figure>
-          <img class="product--image" src="" alt="">
-          <figcaption class="product--imageCaption"></figcaption>
+    <div class="frontPage--featured__wrapper">
 
-        </figure>
-      <p class="product--price"> 35$ </p>
-
-      <button class="product--addToBasket"> <p> add to bag </p> </button>
-
+      <div class="frontPage--featured__headlines">
+        <a href="# "> <h3 class="frontPage--featured__headlineItem"> NEW ARRIVALS</h3> </a>
+        <a href="# "> <h3 class="frontPage--featured__headlineItem"> TOP SELLERS</h3> </a>
+        <a href="# "> <h3 class="frontPage--featured__headlineItem"> FEATURED</h3> </a>
       </div>
+<div class="columnDiv">
+
+  <div class="product--elementWrapper">
+    <article class="product--box">
+      <div class="product-wrapper">
+        <div class="product--image">
+          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
+          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+          <div class="product--hoverPopUp">
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
+      <div class="product--info">
+        <p class="product--info__price"> $35 </p>
+        <button class="product--info__addToBasket">
+           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+           ADD TO BAG
+       </button>
+      </div>
+    </article>
+  </div>
+  <div class="product--elementWrapper">
+    <article class="product--box">
+      <div class="product-wrapper">
+        <div class="product--image">
+          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
+          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+          <div class="product--hoverPopUp">
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
+      <div class="product--info">
+        <p class="product--info__price"> $35 </p>
+        <button class="product--info__addToBasket">
+           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+           ADD TO BAG
+       </button>
+      </div>
+    </article>
+  </div>
+  <div class="product--elementWrapper">
+    <article class="product--box">
+      <div class="product-wrapper">
+        <div class="product--image">
+          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
+          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+          <div class="product--hoverPopUp">
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
+      <div class="product--info">
+        <p class="product--info__price"> $35 </p>
+        <button class="product--info__addToBasket">
+           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+           ADD TO BAG
+       </button>
+      </div>
+    </article>
+  </div>
+  <div class="product--elementWrapper">
+    <article class="product--box">
+      <div class="product-wrapper">
+        <div class="product--image">
+          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
+          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+          <div class="product--hoverPopUp">
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
+            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
+      <div class="product--info">
+        <p class="product--info__price"> $35 </p>
+        <button class="product--info__addToBasket">
+           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+           ADD TO BAG
+       </button>
+      </div>
+    </article>
+  </div>
+
+</div>
+
+
+    </div>
 
     </section>
+
+
+
 
     <section class="frontPage--summerOffer">
       <div class="frontPage--summerOffer__wrapper">
 
-        <h3 class="frontPage--summerOffer__text">Summer</h3>
+        <p class="frontPage--summerOffer__text">ALL SUMMERS</p>
 
           <div class="frontPage--summerOffer__circle">
-            <h3 class="frontPage--summerOffer__25percent"></h3>
+            <p class="frontPage--summerOffer__25percent"><strong> GET </strong> 25% <strong> OFF </strong></p>
           </div>
 
-        <h3 class="frontPage--summerOffer__text">collection</h3>
+        <p class="frontPage--summerOffer__text">COLLECTION</p>
 
       </div>
 
@@ -108,7 +206,7 @@
 
     <section class="frontPage--quotes">
       <article class="frontPage--quotes__box">
-        <img class="frontPage--quotes__avatar" src="">
+        <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
         <h1 class="frontPage--quotes__name"> Jane Smith</h1>
         <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
@@ -148,6 +246,9 @@ export default {
     }
   }
 }
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
