@@ -80,105 +80,54 @@
     <div class="frontPage--featured__wrapper">
 
       <div class="frontPage--featured__headlines">
-        <a href="# "> <h3 class="frontPage--featured__headlineItem"> NEW ARRIVALS</h3> </a>
-        <a href="# "> <h3 class="frontPage--featured__headlineItem"> TOP SELLERS</h3> </a>
-        <a href="# "> <h3 class="frontPage--featured__headlineItem"> FEATURED</h3> </a>
+        <a href="#" v-on:click="newArrivals()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> NEW ARRIVALS</h3> </a>
+        <a href="# " v-on:click="getTopSeller()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> TOP SELLERS</h3> </a>
+        <a href="# " v-on:click="getFeatured()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> FEATURED</h3> </a>
       </div>
 <div class="columnDiv">
 
-  <div class="product--elementWrapper">
-    <article class="product--box">
-      <div class="product-wrapper">
-        <div class="product--image">
-          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
-          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
-          <div class="product--hoverPopUp">
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
-          </div>
-        </div>
-      </div>
-      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
-      <div class="product--info">
-        <p class="product--info__price"> $35 </p>
-        <button class="product--info__addToBasket">
-           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
-           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
-           ADD TO BAG
-       </button>
-      </div>
-    </article>
-  </div>
-  <div class="product--elementWrapper">
-    <article class="product--box">
-      <div class="product-wrapper">
-        <div class="product--image">
-          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
-          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
-          <div class="product--hoverPopUp">
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
-          </div>
-        </div>
-      </div>
-      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
-      <div class="product--info">
-        <p class="product--info__price"> $35 </p>
-        <button class="product--info__addToBasket">
-           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
-           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
-           ADD TO BAG
-       </button>
-      </div>
-    </article>
-  </div>
-  <div class="product--elementWrapper">
-    <article class="product--box">
-      <div class="product-wrapper">
-        <div class="product--image">
-          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
-          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
-          <div class="product--hoverPopUp">
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
-          </div>
-        </div>
-      </div>
-      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
-      <div class="product--info">
-        <p class="product--info__price"> $35 </p>
-        <button class="product--info__addToBasket">
-           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
-           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
-           ADD TO BAG
-       </button>
-      </div>
-    </article>
-  </div>
-  <div class="product--elementWrapper">
-    <article class="product--box">
-      <div class="product-wrapper">
-        <div class="product--image">
-          <img src="/static/images/Homepage/Pull&BearDenim.jpg" alt="">
-          <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
-          <div class="product--hoverPopUp">
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></a></span>
-            <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
-          </div>
-        </div>
-      </div>
-      <p class="product--description"> Pull&Bear Crochet Back Playsuit </p>
-      <div class="product--info">
-        <p class="product--info__price"> $35 </p>
-        <button class="product--info__addToBasket">
-           <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
-           <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
-           ADD TO BAG
-       </button>
-      </div>
-    </article>
+
+  <div class="foobar">
+
   </div>
 
+  <ul>
+    <li v-for="product in products" v-bind:key="product.id">
+
+
+      <div class="product--elementWrapper">
+        <article class="product--box">
+          <div class="product-wrapper">
+
+            <div class="product--image">
+              <img :src="product.src" alt="">
+              <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+              <div class="product--hoverPopUp">
+                <span class="iconWrapper"> <router-link :to="'/product/' + product.id"><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></router-link></span>
+                <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+              </div>
+            </div>
+
+          </div>
+          <p class="product--description">{{product.title}} </p>
+          <div class="product--info">
+            <p class="product--info__price"> ${{product.price}} </p>
+            <button class="product--info__addToBasket">
+                <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+               <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+               ADD TO BAG
+           </button>
+          </div>
+        </article>
+      </div>
+
+
+
+
+
+    </li>
+
+    </ul>
 </div>
 
 
@@ -216,7 +165,7 @@
 
     </section>
 
-  
+
 
 
   </div>
@@ -224,11 +173,50 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
+
+
   name: 'FrontPage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      products: ''
+    }
+  },
+  created: function() {
+    this.newArrivals();
+  },
+  methods:{
+    getFeatured: function(event) {
+      axios
+        .get("/static/products.json")
+        .then(response => {
+          this.products = response.data.filter(product => product.featured == true).slice(0,4);
+
+        });
+
+    },
+    newArrivals: function(event) {
+
+
+      axios
+        .get("/static/products.json")
+        .then(response => {
+          this.products = response.data.filter(product => product.date == "25-01-2017").slice(0,4);
+
+        });
+
+    },
+    getTopSeller: function(event) {
+
+
+      axios
+        .get("/static/products.json")
+        .then(response => {
+          this.products = response.data.filter(product => product.topseller == true).slice(0,4);
+
+        });
+
     }
   }
 }

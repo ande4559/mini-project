@@ -48,7 +48,28 @@
 
 
 }
+.frontPage--social__iconWrapper{
+  width: 705px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lightGrey;
+    border-radius: 50px;
+    width: 85px;
+    height: 85px;
+    img{
 
+      width: 40%;
+      height: 40%;
+      display: block;
+    }
+  }
+}
 
 
 .footer{

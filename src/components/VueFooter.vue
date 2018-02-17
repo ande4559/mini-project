@@ -7,12 +7,12 @@
       <div class="frontPage--social__iconWrapper">
 
 
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/facebook.svg" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/google.svg" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/pinterest.svg" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/tumblr.svg" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/twitter.svg" alt=""> </a>
+              <a href="#"> <img src="/static/images/SoMe/youtube.svg" alt=""> </a>
 
       </div>
       <img>

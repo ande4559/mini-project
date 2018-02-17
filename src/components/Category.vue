@@ -13,7 +13,9 @@
 
 
       <div class="foobar">
-        
+
+        <a href="#" v-on:click="getFeatured()">Fuck u anders</a>
+
       </div>
 
       <ul>
@@ -76,21 +78,23 @@ export default {
   name: 'Category',
   data: function() {
     return {
-      products: []
+      products: ''
     }
   },
   created: function() {
-    this.getProducts()
-
+    this.getProducts();
   },
   methods: {
     getProducts: function(){
       axios
         .get("/static/products.json")
-        .then(response => { this.products = response.data; })
-    }
-  },
+        .then(response => {
+          this.products = response.data;
+          console.log(response.data);
+        });
+    },
 
+  }
 }
 
 </script>

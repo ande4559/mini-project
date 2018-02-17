@@ -6,7 +6,13 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 47.10,
     "src": "/static/images/Collection/dress1.jpg",
-    "type": "a"
+    "featured": true,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
+
+
 
   },
   {
@@ -15,8 +21,10 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 299.99,
     "src": "/static/images/Collection/dress2.jpg",
-    "type": "a"
-
+    "featured": true,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
 
   },
   {
@@ -25,7 +33,11 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 199.99,
     "src": "/static/images/Collection/dress3.jpg",
-    "type": "a"
+    "featured": true,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": true
+
 
   },
   {
@@ -34,7 +46,11 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress4.jpg",
-    "type": "a"
+    "featured": false,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": true
+
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress5.jpg",
-    "type": "a"
+    "featured": false,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": true
+
   },
   {
     "id": 6,
@@ -50,7 +70,10 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress6.jpg",
-    "type": "a"
+    "featured": false,
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": true
   },
   {
     "id": 7,
@@ -58,7 +81,12 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress7.jpg",
-    "type": "a"
+    "featured": false,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
   },
   {
     "id": 8,
@@ -66,7 +94,12 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress8.jpg",
-    "type": "a"
+    "featured": false,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
   },
   {
     "id": 9,
@@ -74,7 +107,12 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress9.jpg",
-    "type": "a"
+    "featured": true,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
   },
   {
     "id": 10,
@@ -82,7 +120,12 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress10.jpg",
-    "type": "a"
+    "featured": true,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
   },
   {
     "id": 11,
@@ -90,7 +133,12 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress11.jpg",
-    "type": "a"
+    "featured": false,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
   },
   {
     "id": 12,
@@ -98,7 +146,13 @@
     "description": "lorem ipsum lorup ipsom lorup",
     "price": 99.99,
     "src": "/static/images/Collection/dress12.jpg",
-    "type": "a"
+    "featured": false,
+    "date": "25-01-2017",
+    "color": ["black","red","green","white"],
+    "size": [35, 37, 31, 30, 28],
+    "topseller": false
+
+
   }
 
 
