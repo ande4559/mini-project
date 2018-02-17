@@ -1,6 +1,27 @@
 <template id="">
 
-  <h2>{{product.title}}</h2>
+  <div class="productPage">
+    <section class="productPage--banner">
+      <div class="banner--topBar">
+
+      </div>
+      <div class="banner-picture">
+        <h1>50% OFF SUMMER COLLECTION</h1>
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <h2>{{product.title}}</h2>
+
+  </div>
+
+
+
 
 </template>
 

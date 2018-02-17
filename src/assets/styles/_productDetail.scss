@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+.productPage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .productPage--banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .banner--topBar{
+      background-color: $darkGrey;
+      width: 100%;
+      height: 105px;
+    }
+    .banner-picture{
+      background-image: url("/static/images/Product/50PercentOffImg.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 110px;
+      h1{
+          color: $white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: lighter;
+          font-size: 4rem;
+      }
+
+
+
+    }
+
+  }
+}
