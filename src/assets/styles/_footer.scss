@@ -1,0 +1,148 @@
+
+.footerAndSocial{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.frontPage--social{
+  width: 1170px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+
+
+
+  .frontPage--social__headline{
+    margin-bottom: 75px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+
+
+  &::before{
+    content: ' ' ;
+    background-color: black;
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 7px;
+
+  }
+
+
+
+
+  &::after{
+    content: ' ' ;
+    background-color: black;
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 7px;
+    }
+  }
+
+
+}
+
+
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $darkGrey;
+}
+
+
+.footer--wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 3fr 3fr;
+  grid-template-areas:
+  "sectionOne sectionTwo sectionThree sectionFour sectionFive" ;
+  grid-gap: 30px;
+  width: 1170px;
+  height: 250px;
+  align-items: center;
+
+
+}
+
+.footer--sectionOne{
+  grid-area: sectionOne;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.footer--sectionTwo{
+  grid-area: sectionTwo;
+  display: flex;
+  flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.footer--sectionThree{
+  grid-area: sectionThree;
+  display: flex;
+  flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.footer--sectionFour{
+  grid-area: sectionFour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    width: 80%;
+  }
+
+
+
+}
+
+.footer--sectionFive{
+  grid-area: sectionFive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  img{
+    width: 100%
+
+  }
+
+
+
+
+}
+
+
+
+
+.footer--headline{
+  color: $white;
+  font-size: 1rem;
+}
+
+.footer--link{
+  text-decoration: none;
+  opacity: 0.3;
+  font-size: 0.8rem;
+  color: $white;
+}
+
+.footer-logofigcaption{
+  @extend .footer--link;
+}

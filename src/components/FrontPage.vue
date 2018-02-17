@@ -216,21 +216,7 @@
 
     </section>
 
-    <section class="frontPage--social__">
-      <h3 class="frontPage--social__"> Get us on</h3>
-      <div class="frontPage--social__iconWrapper">
-
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-              <a href="#"> <img src="" alt=""> </a>
-
-      </div>
-      <img>
-
-    </section>
+  
 
 
   </div>

@@ -2,30 +2,103 @@
 
   {
     "id": 1,
-    "title": "product 1",
+    "title": "Crocket black jumpsuit",
     "description": "lorem ipsum lorup ipsom lorup",
-    "price": 399.99
+    "price": 47.10,
+    "src": "/static/images/Collection/dress1.jpg",
+    "type": "a"
 
   },
   {
     "id": 2,
-    "title": "product 2",
+    "title": "Aztec Printed Jumpsuit",
     "description": "lorem ipsum lorup ipsom lorup",
-    "price": 299.99
+    "price": 299.99,
+    "src": "/static/images/Collection/dress2.jpg",
+    "type": "a"
+
 
   },
   {
     "id": 3,
-    "title": "product 3",
+    "title": "Utility Detail Playsuit",
     "description": "lorem ipsum lorup ipsom lorup",
-    "price": 199.99
+    "price": 199.99,
+    "src": "/static/images/Collection/dress3.jpg",
+    "type": "a"
 
   },
   {
     "id": 4,
+    "title": "Denim Jacket",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress4.jpg",
+    "type": "a"
+  },
+  {
+    "id": 5,
+    "title": "Crochet Back Playsuit",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress5.jpg",
+    "type": "a"
+  },
+  {
+    "id": 6,
+    "title": "Aztec Printed Jumpsuit",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress6.jpg",
+    "type": "a"
+  },
+  {
+    "id": 7,
     "title": "product 4",
     "description": "lorem ipsum lorup ipsom lorup",
-    "price": 99.99
+    "price": 99.99,
+    "src": "/static/images/Collection/dress7.jpg",
+    "type": "a"
+  },
+  {
+    "id": 8,
+    "title": "Denim Jacket",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress8.jpg",
+    "type": "a"
+  },
+  {
+    "id": 9,
+    "title": "Crochet Back Playsuit",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress9.jpg",
+    "type": "a"
+  },
+  {
+    "id": 10,
+    "title": "Aztec Printed Jumpsuit",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress10.jpg",
+    "type": "a"
+  },
+  {
+    "id": 11,
+    "title": "Utility Detail Playsuit",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress11.jpg",
+    "type": "a"
+  },
+  {
+    "id": 12,
+    "title": "Denim Jacket",
+    "description": "lorem ipsum lorup ipsom lorup",
+    "price": 99.99,
+    "src": "/static/images/Collection/dress12.jpg",
+    "type": "a"
   }
 
 

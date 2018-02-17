@@ -1,18 +1,69 @@
-<template id="">
-  <div class="">
-    <h1>Product list</h1>
-    <ul>
-      <li v-for="product in products" v-bind:key="product.id">
+<template id="category">
 
-      <router-link :to="'/product/' + product.id"> 
-        <h1>{{product.title}}</h1>
-        <p>{{product.price}}</p>
+  <div class="category--wrapper">
+    <section class="category--header">
+      <h1 class="category-headline">most wanted <strong> NEW COLLECTION </strong></h1>
 
-      </router-link>
+      <router-link class="category--cta" to="/"><p> BROWSE COLLECTION </p></router-link>
 
-      </li>
+    </section>
 
-    </ul>
+    <section class="category--allProducts">
+
+
+
+      <div class="foobar">
+        
+      </div>
+
+      <ul>
+        <li v-for="product in products" v-bind:key="product.id">
+
+
+          <div class="product--elementWrapper">
+            <article class="product--box">
+              <div class="product-wrapper">
+
+                <div class="product--image">
+                  <img :src="product.src" alt="">
+                  <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+                  <div class="product--hoverPopUp">
+                    <span class="iconWrapper"> <router-link :to="'/product/' + product.id"><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></router-link></span>
+                    <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
+                  </div>
+                </div>
+
+              </div>
+              <p class="product--description">{{product.title}} </p>
+              <div class="product--info">
+                <p class="product--info__price"> ${{product.price}} </p>
+                <button class="product--info__addToBasket">
+                    <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
+                   <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+                   ADD TO BAG
+               </button>
+              </div>
+            </article>
+          </div>
+
+
+
+
+
+        </li>
+
+        </ul>
+
+    </section>
+
+    <section class="category--subscribe">
+      <form class="category-form" >
+
+        <input class="category--subscribe__textField" type="text" placeholder="YOUR EMAIL" required>
+        <button class="category--subscribe__button" type="submit"><p>SUBSCRIBE TO OUR NEWSLETTER</p></button>
+
+      </form>
+    </section>
 
   </div>
 
@@ -38,7 +89,7 @@ export default {
         .get("/static/products.json")
         .then(response => { this.products = response.data; })
     }
-  }
+  },
 
 }
 
