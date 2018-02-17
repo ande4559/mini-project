@@ -19,6 +19,9 @@
       </div>
       <div class="info">
 
+        <h1> {{product.title}}</h1>
+
+
 
       <div class="dropdown">
 
@@ -67,10 +70,92 @@
       </div>
     </section>
 
+    <section class="moreInfo">
+      <div class="moreInfo__picture1">
+        <img src="/static/images/Product/AdeliaDressCut1.jpg" alt="">
+
+      </div>
+      <div class="moreInfo__bodyText1">
+        <div class="moreInfo__contentWrapper">
+          <h2 class="moreInfo__headline">Extraordinay design</h2>
+          <p class="moreInfo__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+
+          <div class="iconWrapper">
+            <figure>
+              <span class="imageWrapper">  <img class="moreInfo__icon" src="/static/images/Product/ElegantStyleButterfly.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+            <figure>
+              <span class="imageWrapper">  <img class="moreInfo__icon" src="/static/images/Product/ElegantStylegGlasses.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+            <figure>
+              <span class="imageWrapper"><img class="moreInfo__icon" src="/static/images/Product/ElegantStyleHanger.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+
+
+          </div>
+          <a class="moreInfo_readMore" href="#"><p>READ MORE</p></a>
+
+        </div>
+
+      </div>
+      <div class="moreInfo__picture2">
+          <img src="/static/images/Product/AdeliaDressCut2.jpg" alt="">
+      </div>
+      <div class="moreInfo__bodyText2">
+
+        <div class="moreInfo__contentWrapper">
+          <h2 class="moreInfo__headline">Extraordinay design</h2>
+          <p class="moreInfo__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+
+          <div class="iconWrapper">
+            <figure>
+              <span class="imageWrapper">  <img class="moreInfo__icon" src="/static/images/Product/ElegantStyleButterfly.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+            <figure>
+              <span class="imageWrapper">  <img class="moreInfo__icon" src="/static/images/Product/ElegantStylegGlasses.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+            <figure>
+              <span class="imageWrapper"><img class="moreInfo__icon" src="/static/images/Product/ElegantStyleHanger.png" alt=""></span>
+              <figcaption>elegant style</figcaption>
+            </figure>
+
+
+          </div>
+          <a class="moreInfo_readMore" href="#"><p>READ MORE</p></a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="sharpenYourLook">
+      <h2 class="sharpenYourLook__headline">Sharpen Your Look</h2>
+      <p class="sharpenYourLook_bodyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+    </section>
 
 
 
-    <h2>{{product.title}}</h2>
+
+    <section class="bigDiscounts">
+      <h3 class="bigDiscounts__headline">BIG DISCOUNTS</h3>
+    </section>
 
   </div>
 
