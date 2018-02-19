@@ -3,12 +3,14 @@
   {
     "id": 1,
     "title": "Crocket black jumpsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 47.10,
     "src": "/static/images/Collection/dress1.jpg",
     "featured": true,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
 
@@ -18,24 +20,28 @@
   {
     "id": 2,
     "title": "Aztec Printed Jumpsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 299.99,
     "src": "/static/images/Collection/dress2.jpg",
     "featured": true,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 3,
     "title": "Utility Detail Playsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 199.99,
     "src": "/static/images/Collection/dress3.jpg",
     "featured": true,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": true
 
 
@@ -43,113 +49,131 @@
   {
     "id": 4,
     "title": "Denim Jacket",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress4.jpg",
     "featured": false,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": true
 
   },
   {
     "id": 5,
     "title": "Crochet Back Playsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress5.jpg",
     "featured": false,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": true
 
   },
   {
     "id": 6,
     "title": "Aztec Printed Jumpsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress6.jpg",
     "featured": false,
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": true
   },
   {
     "id": 7,
     "title": "product 4",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress7.jpg",
     "featured": false,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 8,
     "title": "Denim Jacket",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress8.jpg",
     "featured": false,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 9,
     "title": "Crochet Back Playsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress9.jpg",
     "featured": true,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 10,
     "title": "Aztec Printed Jumpsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress10.jpg",
     "featured": true,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 11,
     "title": "Utility Detail Playsuit",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress11.jpg",
     "featured": false,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
   },
   {
     "id": 12,
     "title": "Denim Jacket",
-    "description": "lorem ipsum lorup ipsom lorup",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "brand": "this is the brand and its cool",
+    "info": "here you got some info and its boring",
     "price": 99.99,
     "src": "/static/images/Collection/dress12.jpg",
     "featured": false,
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
-    "size": [35, 37, 31, 30, 28],
+    "size": ["27","28","29","30","31"],
     "topseller": false
 
 

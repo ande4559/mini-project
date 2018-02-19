@@ -17,54 +17,63 @@
       <div class="product--slider">
 
       </div>
-      <div class="info">
-
-        <h1> {{product.title}}</h1>
 
 
+        <div class="info">
 
-      <div class="dropdown">
+                <h1 class="info--headline"> {{product.title}}</h1>
 
-        <select class="dropdown--selector">
-          <option class="dropdown--option"  v-for="(color, index) in product.color" :value="color">{{color}}</option>
-        </select>
-        <select class="dropdown--selector">
-
-          <option class="dropdown--option" v-for="(size, index) in product.size" :value="size">{{size}}</option>
-
-        </select>
-
-      </div>
+                  <p class="info--priceAndeText"> ${{product.price}} <img src="/static/images/Product/ShippingLogo.png" alt=""> Free Shipping Worldwide</p>
 
 
-      <div class="description">
-        <main>
-          <input class="inputFans"  id="tab1" type="radio" name="tabs" checked>
-          <label class="labelFans" for="tab1">description</label>
 
-          <input class="inputFans" id="tab2" type="radio" name="tabs">
-          <label class="labelFans" for="tab2">Brand</label>
 
-          <input class="inputFans" id="tab3" type="radio" name="tabs">
-          <label class="labelFans" for="tab3">Info</label>
+              <form class="dropdown-container">
 
-          <section id="description">
-            <p>{{product.description}}</p>
+                <v-select class="dropdown1" v-model="selected" :placeholder="product.color[0]" :options="product.color"></v-select>
 
-          </section>
+                <v-select class="dropdown2" v-model="selected" :placeholder="product.size[0]" :options="product.size"></v-select>
+                <a class="button" href="#"> <img src="/static/images/Product/SizeGuideLogo.png"> Size guide</a>
 
-          <section id="brand">
-            <p>{{product.description}}</p>
 
-          </section>
+              </form>
 
-          <section id="info">
-            <p>{{product.description}}</p>
+            <div class="buttons">
+              <a class="addToBag" href="#"> <img class="icon1" src="/static/images/icons/cart.svg" alt="">ADD TO BAG</a>
+              <a class="saveForlater" href="#"> SAVE FOR LATER</a>
+              <a class="share" href="#"> <img src="/static/images/Product/ShareProductLogo.png" alt=""> Share this product </a>
 
-          </section>
+            </div>
 
-        </main>
-      </div>
+
+              <div class="description">
+                <main>
+                  <input class="inputFans"  id="tab1" type="radio" name="tabs" checked>
+                  <label class="labelFans" for="tab1">description</label>
+
+                  <input class="inputFans" id="tab2" type="radio" name="tabs">
+                  <label class="labelFans" for="tab2">Brand</label>
+
+                  <input class="inputFans" id="tab3" type="radio" name="tabs">
+                  <label class="labelFans" for="tab3">Info</label>
+
+                  <section id="description">
+                    <p>{{product.description}}</p>
+
+                  </section>
+
+                  <section id="brand">
+                    <p>{{product.brand}}</p>
+
+                  </section>
+
+                  <section id="info">
+                    <p>{{product.info}}</p>
+
+                  </section>
+
+                </main>
+              </div>
 
 
       </div>
@@ -166,9 +175,11 @@
 
 <script type="text/javascript">
 import axios from 'axios';
+import vSelect from 'vue-select';
 
 export default {
   name: 'product-detail',
+  components: { vSelect },
   data: function() {
     return{
       product: ''

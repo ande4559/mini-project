@@ -1,13 +1,13 @@
 <template>
 
   <div class="root-element">
-    <section class="frontPage--Banner">
+    <slick ref="slick" :options="slickOptions" class="frontPage--Banner">
       <div class="frontPage--Banner__sliderbox">
         <a class="frontPage--Banner__callToAction" href="#"> Learn more about great deals</a>
       </div>
 
 
-  </section>
+  </slick>
 
     <section class="frontPage--sectionTwo">
       <div class="frontPage--sectionTwo__box1">
@@ -174,13 +174,18 @@
 
 <script>
 import axios from 'axios';
+import Slick from 'vue-slick';
 export default {
 
 
   name: 'FrontPage',
   data () {
     return {
-      products: ''
+      products: '',
+      slickOptions:{
+                slidesToShow: 3,
+                // Any other options that can be got from plugin documentation
+            },
     }
   },
   created: function() {
@@ -217,9 +222,24 @@ export default {
 
         });
 
-    }
+    },
+    next() {
+            this.$refs.slick.next();
+        },
+
+        prev() {
+            this.$refs.slick.prev();
+        },
+
+        reInit() {
+            // Helpful if you have to deal with v-for to update dynamic lists
+            this.$nextTick(() => {
+                this.$refs.slick.reSlick();
+            });
+        },
+    },
   }
-}
+
 
 
 

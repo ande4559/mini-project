@@ -48,16 +48,159 @@
   grid-gap: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
+
+  .info{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+    "headline headline "
+    "priceAndText priceAndText"
+    "dropdown dropdown"
+    "buttons buttons"
+    "description description"
+    ;
+
+    .info--headline{
+      grid-area: headline;
+      margin-bottom: 30px;
+    }
+
+    .info--priceAndeText{
+      margin-bottom: 30px;
+      grid-area: priceAndText;
+      img{
+        margin-left: 20px;
+      }
+    }
+
+    .buttons{
+      grid-area: buttons;
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 270px 2fr;
+      grid-template-areas:
+      "addToBag ."
+      "saveForlater share";
+      grid-gap: 10px;
+
+      .addToBag{
+        grid-area: addToBag;
+        display: flex;
+        width: 270px;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
+        background-color: $turkish;
+        color: $white;
+        text-decoration: none;
+
+        .icon1{
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+
+        &:hover{
+          background-color: $darkGrey;
+          color: $white;;
+
+
+        }
+
+      }
+      .saveForlater{
+        grid-area: saveForlater;
+        display: flex;
+        width: 270px;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: $lightgrey-productPage;
+        color: $black;
+        text-decoration: none;
+        &:hover{
+          background-color: $darkGrey;
+          color: $white;;
+
+
+        }
+
+      }
+      .share{
+        grid-area: share;
+        color: $black;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 0.75rem;
+        img{
+          margin-right: 10px;
+        }
+      }
+
+    }
+
+
+
+
+      .dropdown-container {
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 260px 2fr;
+        grid-template-areas:
+        "dropdown1 dropdown1 ."
+        "dropdown2 dropdown2 button";
+        grid-gap: 10px;
+
+        div{
+          width: 100%;
+          position: relative;
+        }
+
+        .dropdown1{
+          grid-area: dropdown1;
+        }
+        .dropdown2{
+          grid-area: dropdown2;
+        }
+        .button{
+          grid-area: button;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 130px;
+          height: 40px;
+          background-color: $lightgrey-productPage;
+          color: $black;
+          font-size: 0.75rem;
+          text-decoration: none;
+          img{
+            margin-right: 10px;
+          }
+        }
+
+
+
+      }
+
+
+  }
 }
 
 
 
 .description{
+  grid-area: description;
 
 main {
   min-width: 320px;
   max-width: 800px;
-  padding: 50px;
   margin: 0 auto;
   background: $fullwhite;
 }
@@ -67,6 +210,12 @@ section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid $grey-border;
+  p{
+    color: $black;
+    opacity: 0.6;
+    font-size: 0.75rem;
+    line-height: 25px;
+  }
 }
 
 input {
@@ -81,13 +230,14 @@ label {
   text-align: center;
   color: $darkGrey;
   border: 1px solid transparent;
+  &:hover {
+    color: $turkish;
+    cursor: pointer;
+  }
 }
 
 
-label:hover {
-  color: $lightGrey;
-  cursor: pointer;
-}
+
 
 input:checked + label {
   color: $black;
