@@ -42,13 +42,14 @@
     grid-area: image;
     width: 100%;
     display: grid;
-    grid-template-columns: 65px 530px;
+    grid-template-columns: 60px 500px;
     grid-template-areas:
       "thumbnail img";
+      grid-gap: 10px;
 
 
 
-    .product--sliderbigSlider {
+    &__bigSlider {
       grid-area: img;
 
       img {
@@ -57,7 +58,7 @@
       }
     }
 
-    .product--slidersmallSlider {
+    &__smallSlider {
       grid-area: thumbnail;
       align-self: start;
 
@@ -86,6 +87,23 @@
       .slider-for {
         position: relative;
         width: 100%;
+
+        .slick-arrow {
+          display: none;
+          position: absolute;
+          z-index: 1000;
+          top: 50% !important;
+          transform: translateY(-50%);
+
+          &.slick-next {
+            right: 20px;
+            top: 0px;
+          }
+          &.slick-prev {
+            left: 20px;
+            top: 0px;
+          }
+        }
       }
 
       .slick-list {
@@ -119,25 +137,10 @@
           float: left;
         }
       }
-
-      .slick-arrow {
-        position: absolute;
-        z-index: 1000;
-        top: 50% !important;
-        transform: translateY(-50%);
-
-        &.slick-prev {
-          left: 20px;
-          top: 0px;
-        }
-        &.slick-next {
-          right: 20px;
-          top: 0px;
-        }
-      }
     }
 
       .product--slidersmallSlider {
+
       .slider-nav {
 
         .slick-list {
@@ -167,8 +170,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-  "product--slider dropdown"
-  "product--slider description";
+  "image dropdown"
+  "image description";
   grid-gap: 10px;
   margin-top: 100px;
   margin-bottom: 100px;

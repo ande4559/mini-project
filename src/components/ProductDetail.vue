@@ -20,17 +20,19 @@
 
 
         <div class="product--slider__bigSlider">
-            <slick ref="slick" :options="slickBig"  >
+            <slick class="slider-for" ref="slick" :options="slickBig">
           <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+
             </slick>
         </div>
 
 
 
         <div class="product--slider__smallSlider">
-          <slick ref="slick" :options="slickSmall"  >
+          <slick class="slider-nav" ref="slick" :options="slickSmall">
 
-            <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+
+          <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
           </slick>
         </div>
 
@@ -219,7 +221,8 @@ export default {
         slidesToScroll: 1,
         arrows: false,
         adaptiveHeight: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav',
+        arrows: true
       }
     }
   },
@@ -268,3 +271,34 @@ export default {
 
 
 </script>
+
+<style lang="scss">
+  .slick-arrow {
+    position: absolute;
+    z-index: 1000;
+    top: 50% !important;
+    transform: translateY(-50%);
+
+    &.slick-next {
+      right: 69px;
+      top: 0px;
+    }
+    &.slick-prev {
+      left: 20px;
+      top: 0px;
+    }
+  }
+  .slider-nav{
+    .slick-current{
+      -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    }
+    .slick-list{
+      padding: 0px !important;
+      margin-top: 10px;
+
+    }
+  }
+
+</style>
