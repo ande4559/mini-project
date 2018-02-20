@@ -14,7 +14,12 @@
 
       <div class="foobar">
 
-        <a href="#" v-on:click="sortByPrice()" @click.prevent='sortByPrice()'>Fuck u anders</a>
+      <p>New collection (1-32 of 58)</p>
+      <p>sort by &#10175;</p>
+      <p>features &#10175;</p>
+      <p>size &#10175;</p>
+      <p>colour &#10175;</p>
+      <p>price &#10175;</p>
 
       </div>
 
