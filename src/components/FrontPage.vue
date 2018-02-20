@@ -148,7 +148,7 @@
             <p class="product--info__price"> ${{product.price}} </p>
             <button class="product--info__addToBasket">
                 <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
-               <img class="whiteBag" src="/static/images/Header/Shopping bag symbol.png" alt="">
+               <img class="whiteBag" src="/static/images/Header/Shoppingbagsymbol.png" alt="">
                ADD TO BAG
            </button>
           </div>

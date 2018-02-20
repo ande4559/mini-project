@@ -15,11 +15,11 @@
       <div class="foobar">
 
       <p>New collection (1-32 of 58)</p>
-      <p>sort by &#10175;</p>
-      <p>features &#10175;</p>
-      <p>size &#10175;</p>
-      <p>colour &#10175;</p>
-      <p>price &#10175;</p>
+      <p>sort by &#9660;</p>
+      <p>features &#9660;</p>
+      <p>size &#9660;</p>
+      <p>colour &#9660;</p>
+      <p>price &#9660;</p>
 
       </div>
 
