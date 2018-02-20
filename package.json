@@ -18,6 +18,7 @@
     "vue-slick": "^1.1.12"
   },
   "devDependencies": {
+    "@profesia/vue-hamburger-menu-component": "^1.0.1",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",

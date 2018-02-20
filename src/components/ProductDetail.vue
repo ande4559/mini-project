@@ -21,7 +21,9 @@
 
         <div class="product--slider__bigSlider">
             <slick class="slider-for" ref="slick" :options="slickBig">
+              <img :src="product.src" alt="">
           <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+
 
             </slick>
         </div>
@@ -32,7 +34,11 @@
           <slick class="slider-nav" ref="slick" :options="slickSmall">
 
 
+            <img :src="product.src" alt="">
+
           <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+
+
           </slick>
         </div>
 

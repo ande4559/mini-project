@@ -17,6 +17,7 @@ import MyPanel from '@/components/MyPanel'
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 
+
 export default {
   name: 'App',
   components: {

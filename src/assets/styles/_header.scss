@@ -40,6 +40,9 @@
 
 
     }
+    .header--navigation__item2, .header--navigation__item3, .header--navigation__item4{
+      @extend .header--navigation__item ;
+    }
 
 
   }

@@ -14,7 +14,7 @@
 
       <div class="foobar">
 
-        <a href="#" v-on:click="getFeatured()">Fuck u anders</a>
+        <a href="#" v-on:click="sortByPrice()" @click.prevent='sortByPrice()'>Fuck u anders</a>
 
       </div>
 
@@ -92,6 +92,19 @@ export default {
           this.products = response.data;
           console.log(response.data);
         });
+    },
+    sortByPrice: function(event) {
+
+
+      axios
+        .get("/static/products.json")
+        .then(response => {
+          this.products = response.data.sort(function(a, b){
+   return product.price(a) - product.price(b);
+});
+
+        });
+
     },
 
   }

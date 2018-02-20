@@ -71,13 +71,18 @@
 
 
       <div class="frontPage--topBrands__slider">
-
+          <slick ref="slick" :options="slickTopBrands" >
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
         <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
-
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
+        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
+      </slick>
 
       </div>
 
@@ -109,9 +114,9 @@
     <div class="frontPage--featured__wrapper">
 
       <div class="frontPage--featured__headlines">
-        <a href="#" v-on:click="newArrivals()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> NEW ARRIVALS</h3> </a>
-        <a href="# " v-on:click="getTopSeller()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> TOP SELLERS</h3> </a>
-        <a href="# " v-on:click="getFeatured()" @click.prevent='click'> <h3 class="frontPage--featured__headlineItem"> FEATURED</h3> </a>
+        <a href="#" v-on:click="newArrivals()" @click.prevent='newArrivals()'> <h3 class="frontPage--featured__headlineItem"> NEW ARRIVALS</h3> </a>
+        <a href="# " v-on:click="getTopSeller()" @click.prevent='getTopSeller()'> <h3 class="frontPage--featured__headlineItem"> TOP SELLERS</h3> </a>
+        <a href="# " v-on:click="getFeatured()" @click.prevent='getFeatured()'> <h3 class="frontPage--featured__headlineItem"> FEATURED</h3> </a>
       </div>
 <div class="columnDiv">
 
@@ -248,6 +253,16 @@ export default {
         swipe: true,
         arrows: false
 
+      },
+      slickTopBrands:{
+        slidesToShow: 5,
+        infinite: true,
+        dots: true,
+        draggable: true,
+        swipe: true,
+        arrows: true,
+        centerMode: true
+
       }
 
     }
@@ -310,6 +325,15 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+
+.frontPage--topBrands{
+  .slick-slide{
+    width: 100% !important;
+    margin: 30px;
+  }
+}
+
+
 
 </style>
