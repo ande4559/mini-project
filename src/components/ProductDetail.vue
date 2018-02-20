@@ -14,7 +14,26 @@
     </section>
 
     <section class="product--wrapper">
+
+
       <div class="product--slider">
+
+
+        <div class="product--slider__bigSlider">
+            <slick ref="slick" :options="slickBig"  >
+          <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+            </slick>
+        </div>
+
+
+
+        <div class="product--slider__smallSlider">
+          <slick ref="slick" :options="slickSmall"  >
+
+            <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+          </slick>
+        </div>
+
 
       </div>
 
@@ -176,13 +195,32 @@
 <script type="text/javascript">
 import axios from 'axios';
 import vSelect from 'vue-select';
+import Slick from 'vue-slick';
+
 
 export default {
   name: 'product-detail',
-  components: { vSelect },
+  components: { vSelect, Slick },
   data: function() {
     return{
-      product: ''
+      product: '',
+      slickSmall: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: true,
+        vertical: true,
+        asNavFor: '.slider-for',
+        arrows: true
+      },
+      slickBig: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        adaptiveHeight: true,
+        asNavFor: '.slider-nav'
+      }
     }
   },
   created: function() {
@@ -201,13 +239,24 @@ export default {
         .then(response => {
           this.product = response.data.filter(product => product.id == id)[0];
         })
-        .catch(error =>
-          {console.log(error);
-        }
-      )
-
-
+        .catch(error => {
+          console.log(error);
+        });
     },
+    next() {
+            this.$refs.slick.next();
+        },
+
+        prev() {
+            this.$refs.slick.prev();
+        },
+
+        reInit() {
+            // Helpful if you have to deal with v-for to update dynamic lists
+            this.$nextTick(() => {
+                this.$refs.slick.reSlick();
+            });
+        },
 
   }
 

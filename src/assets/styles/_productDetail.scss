@@ -38,6 +38,130 @@
   }
 }
 
+.product--slider {
+    grid-area: image;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65px 530px;
+    grid-template-areas:
+      "thumbnail img";
+
+
+
+    .product--sliderbigSlider {
+      grid-area: img;
+
+      img {
+      height: 620px;
+      width: auto !important;
+      }
+    }
+
+    .product--slidersmallSlider {
+      grid-area: thumbnail;
+      align-self: start;
+
+      img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 15px;
+
+        &:nth-last-of-type(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  .product--slider {
+    justify-content: center;
+    align-items: center;
+
+    .product--sliderbigSlider  {
+
+      .slider-nav {
+        position: relative;
+      }
+
+      .slider-for {
+        position: relative;
+        width: 100%;
+      }
+
+      .slick-list {
+        overflow: hidden;
+        margin: 0px 20px;
+
+        .slick-track {
+          display: flex;
+          flex-direction: row;
+          .slick-slide {
+            z-index: 1 !important;
+          }
+        }
+      }
+
+      .slick-list {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+          float: left;
+        }
+      }
+
+      .slick-arrow {
+        position: absolute;
+        z-index: 1000;
+        top: 50% !important;
+        transform: translateY(-50%);
+
+        &.slick-prev {
+          left: 20px;
+          top: 0px;
+        }
+        &.slick-next {
+          right: 20px;
+          top: 0px;
+        }
+      }
+    }
+
+      .product--slidersmallSlider {
+      .slider-nav {
+
+        .slick-list {
+          overflow: hidden;
+          width: 100%;
+          padding: 0px !important;
+
+          .slick-slide {
+            margin: 20px 0px;
+            user-select: none;
+            cursor: pointer;
+            &:nth-of-type(1) {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
 .product--wrapper{
   width: 1170px;
   display: grid;
@@ -381,11 +505,20 @@ input:checked + label {
         justify-content: center;
         align-items: center;
         border: 2px solid $white;
+        text-decoration: none;
 
         p{
           text-decoration: none;
           color:  $white;
           font-size: 0.75rem;
+        }
+
+        &:hover{
+          transition: all .3 ease-in-out;
+          background-color: $white;
+          p{
+            color: $black;
+          }
         }
       }
 

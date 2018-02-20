@@ -1,13 +1,42 @@
 <template>
 
   <div class="root-element">
-    <slick ref="slick" :options="slickOptions" class="frontPage--Banner">
-      <div class="frontPage--Banner__sliderbox">
-        <a class="frontPage--Banner__callToAction" href="#"> Learn more about great deals</a>
-      </div>
+    <section class="banner-slider">
+      <slick ref="slick" :options="slickOptions"  >
+
+        <div class="banner-slider__slide">
+
+              <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
 
 
-  </slick>
+              <a class="banner-button" href="#"> Learn more about great deals</a>
+
+        </div>
+
+        <div class="banner-slider__slide">
+
+              <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
+
+
+              <a class="banner-button" href="#"> Learn more about great deals</a>
+
+        </div>
+
+        <div class="banner-slider__slide">
+
+              <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
+
+
+              <a class="banner-button" href="#"> Learn more about great deals</a>
+
+        </div>
+
+
+
+      </slick>
+    </section>
+
+
 
     <section class="frontPage--sectionTwo">
       <div class="frontPage--sectionTwo__box1">
@@ -153,7 +182,9 @@
 
     </section>
 
+
     <section class="frontPage--quotes">
+      <slick ref="slick" :options="slickQuotes"  >
       <article class="frontPage--quotes__box">
         <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
         <h1 class="frontPage--quotes__name"> Jane Smith</h1>
@@ -162,8 +193,26 @@
            a large language ocean</p>
 
       </article>
+      <article class="frontPage--quotes__box">
+        <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
+        <h1 class="frontPage--quotes__name"> John Doe</h1>
+        <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+           there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+           a large language ocean</p>
+
+      </article>
+      <article class="frontPage--quotes__box">
+        <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
+        <h1 class="frontPage--quotes__name"> Anders Larsen</h1>
+        <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+           there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+           a large language ocean</p>
+
+      </article>
+    </slick>
 
     </section>
+
 
 
 
@@ -176,16 +225,31 @@
 import axios from 'axios';
 import Slick from 'vue-slick';
 export default {
-
-
+  components: { Slick },
   name: 'FrontPage',
   data () {
     return {
       products: '',
-      slickOptions:{
-                slidesToShow: 3,
-                // Any other options that can be got from plugin documentation
+      slickOptions: {
+          slidesToShow: 1,
+          infinite: true,
+          arrows: true,
+          draggable: true,
+          swipe: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000
             },
+      slickQuotes: {
+        slidesToShow: 1,
+        infinite: true,
+        dots: true,
+        draggable: true,
+        swipe: true,
+        arrows: false
+
+      }
+
     }
   },
   created: function() {

@@ -7,12 +7,12 @@
       <div class="frontPage--social__iconWrapper">
 
 
-              <a v-bind:href="facebookLink"> <img src="/static/images/SoMe/facebook.svg" alt=""> </a>
-              <a v-bind:href="googleLink"> <img src="/static/images/SoMe/google.svg" alt=""> </a>
-              <a v-bind:href="pinterestLink"> <img src="/static/images/SoMe/pinterest.svg" alt=""> </a>
-              <a v-bind:href="tumbrLink"> <img src="/static/images/SoMe/tumblr.svg" alt=""> </a>
-              <a v-bind:href="twitterLink"> <img src="/static/images/SoMe/twitter.svg" alt=""> </a>
-              <a v-bind:href="youtubeLink"> <img src="/static/images/SoMe/youtube.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="facebookLink"> <img src="/static/images/SoMe/facebook.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="googleLink"> <img src="/static/images/SoMe/google.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="pinterestLink"> <img src="/static/images/SoMe/pinterest.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="tumblrLink"> <img src="/static/images/SoMe/tumblr.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="twitterLink"> <img src="/static/images/SoMe/twitter.svg" alt=""> </a>
+              <a class="iconPicture" v-bind:href="youtubeLink"> <img src="/static/images/SoMe/youtube.svg" alt=""> </a>
 
       </div>
       <img>
