@@ -16,13 +16,13 @@
     <section class="product--wrapper">
 
 
-      <div class="product--slider">
+      <div class="product--slider" itemscope itemtype="http://schema.org/Product">
 
 
         <div class="product--slider__bigSlider">
             <slick class="slider-for" ref="slick" :options="slickBig">
-              <img :src="product.src" alt="">
-          <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+              <img  itemprop="image":src="product.src" alt="">
+          <img itemprop="image" v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
 
 
             </slick>
@@ -30,13 +30,13 @@
 
 
 
-        <div class="product--slider__smallSlider">
+        <div class="product--slider__smallSlider" itemscope itemtype="http://schema.org/Product">
           <slick class="slider-nav" ref="slick" :options="slickSmall">
 
 
-            <img :src="product.src" alt="">
+            <img itemprop="image" :src="product.src" alt="">
 
-          <img v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
+          <img  itemprop="image" v-for="(item, index) in product.pictures" v-bind:key="product.pictures" :src="item">
 
 
           </slick>
@@ -48,18 +48,18 @@
 
         <div class="info">
 
-                <h1 class="info--headline"> {{product.title}}</h1>
+                <h1 itemprop="name" class="info--headline"> {{product.title}}</h1>
 
-                  <p class="info--priceAndeText"> ${{product.price}} <img src="/static/images/Product/ShippingLogo.png" alt=""> Free Shipping Worldwide</p>
+                  <pitemprop="offer" class="info--priceAndeText"> ${{product.price}} <img src="/static/images/Product/ShippingLogo.png" alt=""> Free Shipping Worldwide</p>
 
 
 
 
               <form class="dropdown-container">
 
-                <v-select class="dropdown1" v-model="selected" :placeholder="product.color[0]" :options="product.color"></v-select>
+                <v-select itemprop="color" class="dropdown1" v-model="selected" :placeholder="product.color[0]" :options="product.color"></v-select>
 
-                <v-select class="dropdown2" v-model="selected" :placeholder="product.size[0]" :options="product.size"></v-select>
+                <v-select itemprop="weight" class="dropdown2" v-model="selected" :placeholder="product.size[0]" :options="product.size"></v-select>
                 <a class="button" href="#"> <img src="/static/images/Product/SizeGuideLogo.png"> Size guide</a>
 
 
@@ -73,7 +73,7 @@
             </div>
 
 
-              <div class="description">
+              <div class="description" itemscope itemtype="http://schema.org/Product">
                 <main>
                   <input class="inputFans"  id="tab1" type="radio" name="tabs" checked>
                   <label class="labelFans" for="tab1">description</label>
@@ -85,17 +85,17 @@
                   <label class="labelFans" for="tab3">Info</label>
 
                   <section id="description">
-                    <p>{{product.description}}</p>
+                    <p itemprop="description">{{product.description}}</p>
 
                   </section>
 
                   <section id="brand">
-                    <p>{{product.brand}}</p>
+                    <p itemprop="brand">{{product.brand}}</p>
 
                   </section>
 
                   <section id="info">
-                    <p>{{product.info}}</p>
+                    <p itemprop="manufacturer">{{product.info}}</p>
 
                   </section>
 

@@ -6,28 +6,28 @@
 
         <div class="banner-slider__slide">
 
-              <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
+              <img itemprop="image" class="banner-img" src="/static/images/Header/HEADER.jpg" alt="classy">
 
 
-              <a class="banner-button" href="#"> Learn more about great deals</a>
-
-        </div>
-
-        <div class="banner-slider__slide">
-
-              <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
-
-
-              <a class="banner-button" href="#"> Learn more about great deals</a>
+              <a class="banner-button" href="#"> Check out <div itemprop="logo"> Classy </div> products</a>
 
         </div>
 
         <div class="banner-slider__slide">
 
+              <img itemprop="image" class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
+
+
+              <a  itemprop="image"class="banner-button" href="#"> Learn more about great deals</a>
+
+        </div>
+
+        <div itemprop="image" class="banner-slider__slide">
+
               <img class="banner-img" src="/static/images/Header/HEADER.jpg" alt="">
 
 
-              <a class="banner-button" href="#"> Learn more about great deals</a>
+              <a class="banner-button" href="#"> All products</a>
 
         </div>
 
@@ -41,7 +41,7 @@
     <section class="frontPage--sectionTwo">
       <div class="frontPage--sectionTwo__box1">
 
-        <a href="/" class="frontPage--sectionTwo__callToAction"> <strong>MEN'S</strong> Lookbook</a>
+        <a href="/" class="frontPage--sectionTwo__callToAction" itemprop="brand"> <strong>MEN'S</strong> Lookbook</a>
 
       </div>
 
@@ -59,7 +59,7 @@
 
       <div class="frontPage--sectionTwo__box2">
 
-        <a href="/" class="frontPage--sectionTwo__callToAction"><strong> WOMEN'S</strong> Lookbook</a>
+        <a href="/" class="frontPage--sectionTwo__callToAction" itemprop="brand"><strong> WOMEN'S</strong> Lookbook</a>
 
       </div>
 
@@ -72,16 +72,16 @@
 
       <div class="frontPage--topBrands__slider">
           <slick ref="slick" :options="slickTopBrands" >
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="">
-        <img class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="">
+        <img itemprop="brand" class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="Monki ">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="Miss Guided">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="Michael Kors">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="Pull and bear">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="Mango">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MonkiTrans.png" alt="Monki">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MissGuidedTrans.png" alt="Miss Guided">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MichaelKorsTrans.png" alt="Michael Kors">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/Pull&BearTrans.png" alt="Pull and Bear">
+        <img itemprop="brand"  class="frontPage--topBrands__sliderItem" src="/static/images/Homepage/MangoTrans.png" alt="Mango">
       </slick>
 
       </div>
@@ -131,10 +131,10 @@
 
       <div class="product--elementWrapper">
         <article class="product--box">
-          <div class="product-wrapper">
+          <div class="product-wrapper" itemscope itemtype="http://schema.org/Product">
 
-            <div class="product--image">
-              <img :src="product.src" alt="">
+            <div class="product--image" >
+              <img itemprop="image" :src="product.src" alt="">
               <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
               <div class="product--hoverPopUp">
                 <span class="iconWrapper"> <router-link :to="'/product/' + product.id"><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></router-link></span>
@@ -143,9 +143,9 @@
             </div>
 
           </div>
-          <p class="product--description">{{product.title}} </p>
+          <p itemprop="name" class="product--description">{{product.title}} </p>
           <div class="product--info">
-            <p class="product--info__price"> ${{product.price}} </p>
+            <p itemprop="offer" class="product--info__price"> ${{product.price}} </p>
             <button class="product--info__addToBasket">
                 <img class="blackBag" src="/static/images/icons/black-cart.png" alt="">
                <img class="whiteBag" src="/static/images/Header/Shoppingbagsymbol.png" alt="">
@@ -178,7 +178,7 @@
         <p class="frontPage--summerOffer__text">ALL SUMMER</p>
 
           <div class="frontPage--summerOffer__circle">
-            <p class="frontPage--summerOffer__25percent"><strong> GET </strong> 25% <strong> OFF </strong></p>
+            <p itemprop="event" class="frontPage--summerOffer__25percent"><strong> GET </strong> 25% <strong> OFF </strong></p>
           </div>
 
         <p class="frontPage--summerOffer__text">COLLECTION</p>
@@ -188,28 +188,28 @@
     </section>
 
 
-    <section class="frontPage--quotes">
+    <section class="frontPage--quotes" itemscope itemtype="http://schema.org/Review">
       <slick ref="slick" :options="slickQuotes"  >
       <article class="frontPage--quotes__box">
         <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
-        <h1 class="frontPage--quotes__name"> Jane Smith</h1>
-        <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+        <h1 itemprop="author" class="frontPage--quotes__name"> Jane Smith</h1>
+        <p itemprop="review" class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
            a large language ocean</p>
 
       </article>
-      <article class="frontPage--quotes__box">
+      <article class="frontPage--quotes__box" itemscope itemtype="http://schema.org/Review">
         <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
-        <h1 class="frontPage--quotes__name"> John Doe</h1>
-        <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+        <h1 itemprop="author" class="frontPage--quotes__name"> John Doe</h1>
+        <p itemprop="review" class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
            a large language ocean</p>
 
       </article>
-      <article class="frontPage--quotes__box">
+      <article class="frontPage--quotes__box" itemscope itemtype="http://schema.org/Review">
         <img class="frontPage--quotes__avatar" src="/static/images/Homepage/avatar.png">
-        <h1 class="frontPage--quotes__name"> Anders Larsen</h1>
-        <p class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+        <h1 itemprop="author" class="frontPage--quotes__name"> Anders Larsen</h1>
+        <p itemprop="review" class="frontPage--quotes__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
            a large language ocean</p>
 

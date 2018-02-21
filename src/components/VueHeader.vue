@@ -2,7 +2,7 @@
   <header id="scroll" class="header">
 
     <span class="header--logoWrapper">
-        <router-link to="/"> <img class="header--logoImage" src="/static/images/Header/CLASSY.png" alt=""> </router-link>
+        <router-link to="/"> <img itemprop="logo"class="header--logoImage" src="/static/images/Header/CLASSY.png" alt=""> </router-link>
     </span>
 
     <nav  class="header--navigation">
@@ -15,7 +15,7 @@
 
     <div class="fullscreenMenu">
 
-      <router-link to="/" v-on:click.native="checkMenu"><img class="header--logoImage" src="/static/images/Header/CLASSY.png" alt=""></router-link>
+      <router-link to="/" v-on:click.native="checkMenu"><img itemprop="logo" class="header--logoImage" src="/static/images/Header/CLASSY.png" alt=""></router-link>
 
       <ul class="menu">
         <li class="menu--item">  <router-link v-on:click.native="checkMenu" class="header--navigation__item" to="/category"> ALL PRODUCTS  </router-link></li>

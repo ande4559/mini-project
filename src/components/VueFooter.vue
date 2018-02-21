@@ -58,7 +58,7 @@
 
 
             <article class="footer--sectionFour">
-                <img src="/static/images/Homepage/Creditcards.png" alt="">
+                <img itemprop="paymenentAccepted" src="/static/images/Homepage/Creditcards.png" alt="Creditcards">
 
 
 
@@ -68,7 +68,7 @@
 
 
               <figure>
-                <router-link to="/"> <img class="footer--logoImage" src="/static/images/Header/CLASSY.png" alt=""> </router-link>
+                <router-link to="/"> <img itemprop="logo" class="footer--logoImage" src="/static/images/Header/CLASSY.png" alt="Classy"> </router-link>
                 <figcaption class="footer-logofigcaption">Ecommerce PSDtheme</figcaption>
 
               </figure>

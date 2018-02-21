@@ -96,6 +96,9 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+      div{
+        margin-left: 5px; margin-right: 5px;
+      }
       @media only screen and (max-width: 500px){
         width: 21%;
         font-size: 8px;

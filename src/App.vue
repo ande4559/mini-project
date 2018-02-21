@@ -1,5 +1,5 @@
 <template>
-  <div class="main" id="app">
+  <div class="main" id="app" itemscope itemtype="http://schema.org/Store">
 
     <VueHeader> </VueHeader>
     <router-view/>
