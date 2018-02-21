@@ -16,6 +16,10 @@
       background-color: $darkGrey;
       width: 100%;
       height: 105px;
+      @media only screen and (max-width: 500px){
+        height: 40px;
+
+      }
     }
     .banner-picture{
       background-image: url("/static/images/Product/50PercentOffImg.jpg");
@@ -23,12 +27,18 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 110px;
+      height: auto;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       h1{
           color: $white;
           font-family: 'Roboto', sans-serif;
           font-weight: lighter;
           font-size: 4rem;
+          @media only screen and (max-width: 500px){
+            text-align: center;
+            font-size: 2rem;
+          }
       }
 
 
@@ -46,14 +56,28 @@
     grid-template-areas:
       "thumbnail img";
       grid-gap: 10px;
+    @media only screen and (max-width: 500px){
+      grid-template-columns: 60px 500px;
+      grid-template-areas:
+        "thumbnail img";
+    @media only screen and (max-width: 500px){
+        grid-template-columns: 90%;
+        align-items: center;
+        grid-template-areas:
+          "img"
+          "thumbnail"
+          ;
+        }
 
+    }
 
 
     &__bigSlider {
       grid-area: img;
 
       img {
-      height: 620px;
+        width: 100%;
+      height: auto;
       width: auto !important;
       }
     }
@@ -61,6 +85,9 @@
     &__smallSlider {
       grid-area: thumbnail;
       align-self: start;
+      @media only screen and (max-width: 500px){
+        display: none;
+      }
 
       img {
         height: 80px;
@@ -78,7 +105,14 @@
     justify-content: center;
     align-items: center;
 
+    .product--slider__bigSlider img{
+      width: 90% !important;
+      height: auto;
+    }
+
     .product--sliderbigSlider  {
+
+
 
       .slider-nav {
         position: relative;
@@ -137,6 +171,7 @@
           float: left;
         }
       }
+
     }
 
       .product--slidersmallSlider {
@@ -175,7 +210,17 @@
   grid-gap: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
-
+  @media only screen and (max-width: 500px){
+    width: 100%;
+    height: auto;
+    grid-template-columns: 90%;
+    grid-template-areas:
+    "image"
+    "dropdown"
+    "description";
+    align-items: center;
+    justify-content: center;
+  }
   .info{
     width: 100%;
     height: auto;
@@ -186,12 +231,25 @@
     "priceAndText priceAndText"
     "dropdown dropdown"
     "buttons buttons"
-    "description description"
-    ;
+    "description description";
+
+    @media only screen and (max-width: 500px){
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "headline"
+      "priceAndText "
+      "dropdown"
+      "buttons"
+      "description";
+    }
+
 
     .info--headline{
       grid-area: headline;
       margin-bottom: 30px;
+      @media only screen and (max-width: 500px){
+        text-align: center;
+      }
     }
 
     .info--priceAndeText{
@@ -199,6 +257,9 @@
       grid-area: priceAndText;
       img{
         margin-left: 20px;
+      }
+      @media only screen and (max-width: 500px){
+        text-align: center;
       }
     }
 
@@ -213,6 +274,15 @@
       "addToBag ."
       "saveForlater share";
       grid-gap: 10px;
+        @media only screen and (max-width: 500px){
+          grid-template-columns: 100%;
+          grid-template-areas:
+          "addToBag "
+          "saveForlater"
+          "share";
+          align-items: center;
+          margin-bottom: 10px;
+        }
 
       .addToBag{
         grid-area: addToBag;
@@ -237,6 +307,9 @@
 
 
         }
+        @media only screen and (max-width: 500px){
+          width: 100%
+        }
 
       }
       .saveForlater{
@@ -255,6 +328,9 @@
 
 
         }
+        @media only screen and (max-width: 500px){
+          width: 100%
+        }
 
       }
       .share{
@@ -267,6 +343,11 @@
         img{
           margin-right: 10px;
         }
+          @media only screen and (max-width: 500px){
+            text-align: center;
+            justify-content: center;
+            display: flex;
+          }
       }
 
     }
@@ -284,6 +365,14 @@
         "dropdown1 dropdown1 ."
         "dropdown2 dropdown2 button";
         grid-gap: 10px;
+        @media only screen and (max-width: 500px){
+          grid-template-columns: 100%;
+          grid-template-areas:
+          "dropdown1"
+          "dropdown2 "
+          "button";
+
+        }
 
         div{
           width: 100%;
@@ -343,6 +432,10 @@ section {
     font-size: 0.75rem;
     line-height: 25px;
   }
+  @media only screen and (max-width: 500px){
+      width: 100%;
+
+  }
 }
 
 input {
@@ -361,6 +454,11 @@ label {
     color: $turkish;
     cursor: pointer;
   }
+  @media only screen and (max-width: 500px){
+      width: 21%;
+      font-size: 0.6rem !important;
+  }
+
 }
 
 
@@ -404,12 +502,26 @@ input:checked + label {
   width: 100%;
   height: 400px;
   background-image: url("/static/images/Product/BigDiscountsImg.jpg");
+
+@media only screen and (max-width: 500px){
+  height: auto;
+   background-size: 100% 100%;
+   margin-bottom: 25px;
+ }
   .bigDiscounts__headline{
     color: $white;
     font-size: 2.65rem;
     border: 5px solid $white;
     letter-spacing: 4px;
     padding: 10px;
+
+    @media only screen and (max-width: 500px){
+    font-size: 1rem;
+    border: 3px solid $white;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   }
 }
 
@@ -423,6 +535,12 @@ input:checked + label {
   width: 970px;
   margin-bottom: 100px;
   margin-top: 100px;
+  @media only screen and (max-width: 500px){
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+  }
 
 
   .sharpenYourLook__headline{
@@ -432,6 +550,10 @@ input:checked + label {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 500px){
+      font-size: 1.75rem;
+
+    }
 
 
     &:after{
@@ -442,13 +564,22 @@ input:checked + label {
       height: 5px;
       margin-bottom: 20px;
       margin-top: 20px;
+      @media only screen and (max-width: 500px){
+        height: 3px;
+
+      }
 
     }
   }
   .sharpenYourLook_bodyText{
     color: $grey;
     font-size: 1rem;
+    @media only screen and (max-width: 500px){
+      font-size: 0.75rem;
+
+    }
   }
+
 }
 
 
@@ -456,12 +587,20 @@ input:checked + label {
 .moreInfo{
   display: grid;
   width: 100%;
-  height: 1290px;
+  height: auto;
   grid-template-columns: 50% 50%;
   grid-template-areas:
   "moreInfo__picture1 moreInfo__bodyText1"
   "moreInfo__bodyText2 moreInfo__picture2 ";
   grid-gap: 0px;
+  @media only screen and (max-width: 500px){
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "moreInfo__picture1"
+    "moreInfo__bodyText1"
+     "moreInfo__picture2 "
+    "moreInfo__bodyText2";
+  }
 
   .moreInfo__picture1{
     grid-area: moreInfo__picture1;
@@ -484,6 +623,11 @@ input:checked + label {
     .moreInfo__contentWrapper{
       width: 470px;
       height: auto;
+      @media only screen and (max-width: 500px){
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+        }
 
       .moreInfo__headline{
         color: $white;
@@ -523,6 +667,10 @@ input:checked + label {
           p{
             color: $black;
           }
+
+        }
+        @media only screen and (max-width: 500px){
+          width: 100%;
         }
       }
 
