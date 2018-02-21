@@ -2,9 +2,14 @@
 
   <div class="category--wrapper">
     <section class="category--header">
-      <h1 class="category-headline">most wanted <strong> NEW COLLECTION </strong></h1>
+      <img src="/static/images/Collection/HeaderImageDark.jpg" alt="">
+      <div class="category--header__text">
+        <h1 class="category-headline">most wanted <strong> NEW COLLECTION </strong></h1>
 
-      <router-link class="category--cta" to="/"><p> BROWSE COLLECTION </p></router-link>
+        <router-link class="category--cta" to="/"><p> BROWSE COLLECTION </p></router-link>
+
+      </div>
+
 
     </section>
 

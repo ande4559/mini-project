@@ -9,7 +9,7 @@
 
       <router-link  class="header--navigation__item" to="#"> <img src="/static/images/Header/Login symbol.png" alt=""> LOGIN </router-link>
       <router-link  class="header--navigation__item" to="#"> <img src="/static/images/Header/Shopping bag symbol.png" alt=""> ITEMS </router-link>
-      <router-link class="header--navigation__item" to="#"> <img src="/static/images/Header/Mag glass symbol.png" alt="">  </router-link>
+      <router-link class="header--navigation__item" to="#"> <img class="search" src="/static/images/Header/Mag glass symbol.png" alt="">  </router-link>
       <a class="header--navigation__hamburger" @click.prevent='hamburgerMenu($event)' href="#"> <p class="icon2">&#10005;</p> <img class="icon" src="/static/images/Header/Burger menu icon.png" alt="">  </a>
     </nav>
 

@@ -175,7 +175,7 @@
     <section class="frontPage--summerOffer">
       <div class="frontPage--summerOffer__wrapper">
 
-        <p class="frontPage--summerOffer__text">ALL SUMMERS</p>
+        <p class="frontPage--summerOffer__text">ALL SUMMER</p>
 
           <div class="frontPage--summerOffer__circle">
             <p class="frontPage--summerOffer__25percent"><strong> GET </strong> 25% <strong> OFF </strong></p>
@@ -261,7 +261,17 @@ export default {
         draggable: true,
         swipe: true,
         arrows: true,
-        centerMode: true
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        }
+        ]
 
       }
 
