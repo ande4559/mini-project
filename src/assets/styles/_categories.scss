@@ -186,6 +186,9 @@ ul{
         width: 70px;
         height: 35px;
         background-color: $turkish;
+        &.active{
+          display: none;
+        }
         .product--saleText__item{
         display: flex;
         align-items: center;
