@@ -12,7 +12,8 @@
     "featured": true,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": true
 
 
 
@@ -30,7 +31,8 @@
     "featured": true,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": false
 
   },
   {
@@ -45,7 +47,8 @@
     "featured": true,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": true
+    "topseller": true,
+    "sale": true
 
 
   },
@@ -61,7 +64,8 @@
     "featured": false,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": true
+    "topseller": true,
+    "sale": false
 
   },
   {
@@ -76,7 +80,8 @@
     "featured": false,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": true
+    "topseller": true,
+    "sale": false
 
   },
   {
@@ -91,7 +96,8 @@
     "featured": false,
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": true
+    "topseller": true,
+    "sale": true
   },
   {
     "id": 7,
@@ -106,7 +112,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": false
 
   },
   {
@@ -122,7 +129,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": true
 
   },
   {
@@ -138,7 +146,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": false
 
   },
   {
@@ -154,7 +163,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": true
 
   },
   {
@@ -170,7 +180,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": false
 
   },
   {
@@ -186,7 +197,8 @@
     "date": "25-01-2017",
     "color": ["black","red","green","white"],
     "size": ["27","28","29","30","31"],
-    "topseller": false
+    "topseller": false,
+    "sale": true
 
 
   }

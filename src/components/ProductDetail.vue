@@ -50,7 +50,7 @@
 
                 <h1 itemprop="name" class="info--headline"> {{product.title}}</h1>
 
-                  <pitemprop="offer" class="info--priceAndeText"> ${{product.price}} <img src="/static/images/Product/ShippingLogo.png" alt=""> Free Shipping Worldwide</p>
+                  <p itemprop="offer" class="info--priceAndeText"> ${{product.price}} <img src="/static/images/Product/ShippingLogo.png" alt=""> Free Shipping Worldwide</p>
 
 
 

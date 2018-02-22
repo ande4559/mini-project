@@ -39,7 +39,7 @@
                 <p class="control has-icon has-icon-right">
                     <input name="email" v-model="email" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" type="text" placeholder="Email">
                     <i v-show="errors.has('email')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('email')" class="errorMsg">{{ errors.first('email') }}</span>
+                    <span v-show="errors.has('email')" class="errorMsg">Email is required</span>
                 </p>
             </div>
             <div class="contact--info__formitem2">
@@ -47,7 +47,7 @@
                 <p class="control has-icon has-icon-right">
                     <input itemprop="sender" name="first_name" v-model="first_name" v-validate.initial="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('first_name') }" type="text" placeholder="First Name">
                     <i v-show="errors.has('first_name')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('first_name')" class="errorMsg">{{ errors.first('first_name') }}</span>
+                    <span v-show="errors.has('first_name')" class="errorMsg">First name is required</span>
                 </p>
             </div>
             <div class="contact--info__formitem3">
@@ -55,7 +55,7 @@
                 <p class="control has-icon has-icon-right">
                     <input itemprop="sender" name="last_name" v-model="last_name" v-validate.initial="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('last_name') }" type="text" placeholder="Last Name">
                     <i v-show="errors.has('last_name')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('last_name')" class="errorMsg">{{ errors.first('last_name') }}</span>
+                    <span v-show="errors.has('last_name')" class="errorMsg">Last name is required</span>
                 </p>
             </div>
             <div class="contact--info__formitem4">
@@ -63,7 +63,7 @@
                 <p class="control has-icon has-icon-right">
                     <input name="phone" v-model="phone" v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('phone') }" type="text" placeholder="Phone">
                     <i v-show="errors.has('phone')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('phone')" class="errorMsg">{{ errors.first('phone') }}</span>
+                    <span v-show="errors.has('phone')" class="errorMsg">Phone is required</span>
                 </p>
             </div>
             <div class="contact--info__formitem5">
@@ -75,7 +75,7 @@
 
             <div class="contact--info__formitem6">
                 <p class="control">
-                    <button class="button is-primary" type="submit">Submit</button>
+                    <button class="button is-primary" type="submit">Send</button>
                 </p>
             </div>
         </form>
@@ -129,11 +129,11 @@ export default {
       this.$validator.validateAll().then((result) => {
         if (result) {
           // eslint-disable-next-line
-          alert('From Submitted!');
+          alert('Thank you for your message. We will reply as soon as possible');
           return;
         }
 
-        alert('Correct them errors!');
+        alert('Your form is not filled correctly');
       });
     }
   }

@@ -135,7 +135,7 @@
 
             <div class="product--image" >
               <img itemprop="image" :src="product.src" alt="">
-              <span class="product--saleText"><p class="product--saleText__item"> SALE </p></span>
+              <span class="product--saleText" :class="{active : product.sale}"><p class="product--saleText__item"> SALE </p></span>
               <div class="product--hoverPopUp">
                 <span class="iconWrapper"> <router-link :to="'/product/' + product.id"><img class="product--hoverIcon" src="/static/images/Homepage/QuickViewLogo.png" alt=""></router-link></span>
                 <span class="iconWrapper"><a href=""><img class="product--hoverIcon"src="/static/images/Homepage/SaveLogo.png" alt=""></a></span>
