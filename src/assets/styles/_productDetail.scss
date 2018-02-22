@@ -80,6 +80,15 @@
       height: auto;
       width: auto !important;
       }
+
+      .slick-arrow {
+        &:before,
+        &:after {
+            border-color: darken($lightGrey, 30%) !important;
+            border-width: 3px !important;
+        }
+      }
+
     }
 
     &__smallSlider {
@@ -99,6 +108,7 @@
         }
       }
     }
+
   }
 
   .product--slider {
